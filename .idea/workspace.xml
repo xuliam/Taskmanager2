@@ -2,36 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16b468dd-d72a-4b1d-844c-ac4a01815fc6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Project.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Task.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_12_16_012854_create_projects_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/projects/_createModal.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ProjectsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_12_16_222559_create_tasks_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Taskmanager2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Taskmanager2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Project.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_16_012854_create_projects_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_16_012854_create_projects_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/projects/_createModal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/projects/_createModal.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,6 +120,7 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
       <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
     </include_path>
   </component>
   <component name="ProjectId" id="1V2gje6guqvp98Tq9dIJBKKwCKb" />
@@ -190,7 +174,7 @@
       <option name="presentableId" value="Default" />
       <updated>1576456739305</updated>
       <workItem from="1576456741361" duration="2362000" />
-      <workItem from="1576459582296" duration="3616000" />
+      <workItem from="1576459582296" duration="11419000" />
     </task>
     <servers />
   </component>
