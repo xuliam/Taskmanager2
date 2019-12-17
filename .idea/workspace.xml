@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16b468dd-d72a-4b1d-844c-ac4a01815fc6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ProjectsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_12_16_222559_create_tasks_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/ProjectRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Taskmanager2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Taskmanager2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProjectsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProjectsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Project.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_16_012854_create_projects_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_16_012854_create_projects_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/projects/_createModal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/projects/_createModal.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +118,10 @@
       <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
     </include_path>
   </component>
   <component name="ProjectId" id="1V2gje6guqvp98Tq9dIJBKKwCKb" />
@@ -174,7 +175,8 @@
       <option name="presentableId" value="Default" />
       <updated>1576456739305</updated>
       <workItem from="1576456741361" duration="2362000" />
-      <workItem from="1576459582296" duration="11419000" />
+      <workItem from="1576459582296" duration="16366000" />
+      <workItem from="1576551222411" duration="708000" />
     </task>
     <servers />
   </component>
@@ -185,6 +187,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="410" y="209" key="NewPhpClassDialog" timestamp="1576550100391">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="410" y="209" key="NewPhpClassDialog/0.23.1440.797/-1440.-1046.1440.2537@0.23.1440.797" timestamp="1576550100391" />
     <state x="496" y="338" key="NewPhpFileDialog" timestamp="1576463346878">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
