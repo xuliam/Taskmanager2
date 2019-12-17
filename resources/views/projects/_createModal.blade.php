@@ -20,13 +20,14 @@
 
                    <div class="form-group">
                        {!! Form::label('project', 'Project Name', ['class' => 'control-label']) !!}
-                       {!! Form::text('project', 'hello', ['class' => 'form-control']) !!}
+                       {!! Form::text('project', '', ['class' => 'form-control']) !!}
                    </div>
 
                    <div class="form-group">
                        {!! Form::label('thumbnail', 'Project Pic', ['class' => 'control-label']) !!}
                        {!! Form::file('thumbnail', ['class'=>'form-control-file']) !!}
                    </div>
+                   @include('error.error')
                </div>
 
            </div>
