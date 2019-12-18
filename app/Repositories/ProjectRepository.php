@@ -4,6 +4,8 @@
 namespace App\Repositories;
 
 
+use App\Project;
+
 class ProjectRepository
 {
     public function create($request)
@@ -23,5 +25,27 @@ class ProjectRepository
             return $name;
         }
 
+    }
+
+    public function find($id)
+    {
+        return Project::findOrFail($id);
+    }
+
+    public function delete($id)
+    {
+        $this->find($id)->delete();
+    }
+
+    public function update($request, $id)
+    {
+        $project= $this->find($id);
+
+        $project->name = $request->project;
+        if($request->hasFile('thumbnail')){
+            $project->thumbnail = $this->thumb($request);
+        }
+
+        $project->save();
     }
 }

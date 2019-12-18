@@ -17,3 +17,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('projects', 'ProjectsController@store')->name('projects.store');
+Route::delete('projects/{id}', 'ProjectsController@destroy')->name('projects.destroy');
+Route::patch('projects/{id}', 'ProjectsController@update')->name('projects.update');
