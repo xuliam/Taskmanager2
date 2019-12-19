@@ -15,5 +15,8 @@ class Project extends Model
         return $this->belongsTo('App\User');
     }
 
-
+    public function tasks()
+    {
+        return $this->hasMany('App\Task');
+    }
 }

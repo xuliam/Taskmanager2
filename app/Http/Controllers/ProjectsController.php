@@ -34,8 +34,8 @@ class ProjectsController extends Controller
 
     public function show($id)
     {
-        $this->repo->show($id);
-        return view('projects._show');
+        $cat=$this->repo->show($id);
+        return view('projects._show', compact('cat'));
     }
 
 
