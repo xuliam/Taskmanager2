@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\CreateProjectRequest;
+use App\Http\Requests\UpdateProjectRequest;
 use App\Repositories\ProjectRepository;
 use Illuminate\Http\Request;
 
@@ -26,9 +27,15 @@ class ProjectsController extends Controller
         return back();
     }
 
-    public function update(Request $request, $id){
+    public function update(UpdateProjectRequest $request, $id){
         $this->repo->update($request, $id);
         return back();
+    }
+
+    public function show($id)
+    {
+        $this->repo->show($id);
+        return view('projects._show');
     }
 
 

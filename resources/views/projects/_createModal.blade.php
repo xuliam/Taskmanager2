@@ -27,7 +27,14 @@
                        {!! Form::label('thumbnail', 'Project Pic', ['class' => 'control-label']) !!}
                        {!! Form::file('thumbnail', ['class'=>'form-control-file']) !!}
                    </div>
-                   @include('error.error')
+{{--                   @include('error.error')--}}
+                    @if($errors->create->any())
+                        <ul class="alert alert-danger">
+                            @foreach($errors->create->all() as $error)
+                                <li>{{$error}}</li>
+                            @endforeach
+                        </ul>
+                    @endif
                </div>
 
            </div>

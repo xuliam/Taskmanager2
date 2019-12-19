@@ -1,7 +1,7 @@
-@if ($errors->any())
+@if ($errors->update->any())
 <ul class="alert alert-danger"/>
 
-@foreach($errors->all() as $error)
+@foreach($errors->update->all() as $error)
 <li>{{$error}}</li>
 @endforeach
 

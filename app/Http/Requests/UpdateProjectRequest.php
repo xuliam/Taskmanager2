@@ -5,9 +5,9 @@ namespace App\Http\Requests;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
 
-class CreateProjectRequest extends FormRequest
+class UpdateProjectRequest extends FormRequest
 {
-    protected $errorBag='create';
+    protected $errorBag = 'update';
     /**
      * Determine if the user is authorized to make this request.
      *
@@ -28,11 +28,12 @@ class CreateProjectRequest extends FormRequest
         return [
             'project'=>[
                 'required',
-                Rule::unique('projects','name')->where(function($query){
-                return $query->where('user_id',request()->user()->id);
+                Rule::unique('projects','name')->ignore($this->route('id'))->where(function($query){
+                    return $query->where('user_id', $this->user()->id);
                 })
-],
-            'thumbnail'=>'image',
+            ],
+            'thumbnail'=>'image|max:2048'
+
         ];
     }
 }
