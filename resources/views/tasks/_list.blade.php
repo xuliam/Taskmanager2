@@ -12,8 +12,9 @@
                     <tr>
                         <td>{{$todo->name}}</td>
                         <td>@include('tasks._checkTask')</td>
+                        <td>@include('tasks._editTask')</td>
                     </tr>
-                    @endforeach
+                @endforeach
             </table>
         @endif
     </div>

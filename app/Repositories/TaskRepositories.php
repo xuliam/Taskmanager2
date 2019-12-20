@@ -16,6 +16,11 @@ class TaskRepositories
      ]);
  }
 
+    public function find($id)
+    {
+        return Task::findOrFail($id);
+}
+
     public function check($id)
     {
         $task = Task::findOrFail($id);
@@ -23,4 +28,11 @@ class TaskRepositories
             'completion'=>(int)true
         ]);
  }
+
+    public function update($request, $id)
+    {
+        $this->find($id)->update([
+            'name'=>$request->name
+        ]);
+    }
 }
