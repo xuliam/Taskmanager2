@@ -11,6 +11,7 @@
                 @foreach($todos as $todo)
                     <tr>
                         <td>{{$todo->name}}</td>
+                        <td>@include('tasks._checkTask')</td>
                     </tr>
                     @endforeach
             </table>

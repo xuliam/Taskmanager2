@@ -21,3 +21,4 @@ Route::delete('projects/{id}', 'ProjectsController@destroy')->name('projects.des
 Route::patch('projects/{id}', 'ProjectsController@update')->name('projects.update');
 Route::get('projects/{id}', 'ProjectsController@show')->name('projects.show');
 Route::resource('tasks','TasksController');
+Route::post('check/{id}', 'TasksController@check')->name('tasks.check');
