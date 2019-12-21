@@ -32,7 +32,13 @@ class TaskRepositories
     public function update($request, $id)
     {
         $this->find($id)->update([
-            'name'=>$request->name
+            'name'=>$request->name,
+            'project_id'=>$request->project
         ]);
+    }
+
+    public function destroy($task)
+    {
+        $this->find($task)->delete();
     }
 }

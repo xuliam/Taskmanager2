@@ -10,9 +10,10 @@
             <table class="table table-striped">
                 @foreach($todos as $todo)
                     <tr>
-                        <td>{{$todo->name}}</td>
+                        <td class="col-9 pl-3">{{$todo->name}}</td>
                         <td>@include('tasks._checkTask')</td>
                         <td>@include('tasks._editTask')</td>
+                        <td>@include('tasks._deleteTask')</td>
                     </tr>
                 @endforeach
             </table>

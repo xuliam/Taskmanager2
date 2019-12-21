@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CreateTask;
+use App\Http\Requests\UpdateTask;
 use App\Repositories\TaskRepositories;
 use App\Task;
 use Illuminate\Http\Request;
@@ -40,7 +42,7 @@ class TasksController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CreateTask $request)
     {
        // dd($request->ss);
         $this->repo->create($request);
@@ -76,7 +78,7 @@ class TasksController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdateTask $request, $id)
     {
         $this->repo->update($request, $id);
         return back();
@@ -88,9 +90,10 @@ class TasksController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($task)
     {
-        //
+        $this->repo->destroy($task);
+        return back();
     }
 
     public function check($id)
@@ -99,4 +102,5 @@ class TasksController extends Controller
 
         return back();
     }
+
 }

@@ -37,7 +37,9 @@ class ProjectsController extends Controller
     {
         $todos = $this->repo->todos($id);
         $dones = $this->repo->dones($id);
-        return view('projects._show', compact('id','todos', 'dones'));
+        $projects = request()->user()->projects()->pluck('name','id');
+       //dd($projects);
+        return view('projects._show', compact('id','todos', 'dones', 'projects'));
 
     }
 

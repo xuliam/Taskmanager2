@@ -19,7 +19,11 @@
             <div class="modal-body">
             {!! Form::label('name', 'Task Name:') !!}
             {!! Form::text('name', null, ['class' => 'form-control']) !!}
+
+                {!! Form::label('project', 'Main Project') !!}
+                {!! Form::select('project', $projects , $id->id , ['class' => 'form-control']) !!}
             </div>
+
             <div class="modal-footer">
                {!! Form::submit('Submit', ['class' => 'btn btn-primary']) !!}
             </div>
