@@ -5,6 +5,7 @@ namespace App\Repositories;
 
 
 use App\Task;
+use Illuminate\Support\Facades\Auth;
 
 class TaskRepositories
 {
@@ -40,5 +41,15 @@ class TaskRepositories
     public function destroy($task)
     {
         $this->find($task)->delete();
+    }
+
+    public function todos()
+    {
+        return auth()->user()->tasks()->where('completion', 0)->paginate(5);
+    }
+
+    public function dones()
+    {
+        return auth()->user()->tasks()->where('completion', 1)->paginate(5);
     }
 }

@@ -21,10 +21,7 @@ class TasksController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        //
-    }
+
 
     /**
      * Show the form for creating a new resource.
@@ -101,6 +98,14 @@ class TasksController extends Controller
         $this->repo->check($id);
 
         return back();
+    }
+
+    public function index()
+    {
+        $todos = $this->repo->todos();
+        $dones = $this->repo->dones();
+        $projects = request()->user()->projects()->pluck('name', 'id');
+        return view('tasks.index', compact('todos', 'dones', 'projects'));
     }
 
 }
